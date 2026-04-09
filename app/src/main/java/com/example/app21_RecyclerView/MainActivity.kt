@@ -53,18 +53,22 @@ class MainActivity : ComponentActivity() {
         }
         enableEdgeToEdge()
         setContent {
-//            MyApp_Theme() {
-//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    NavigationWrapper_pokemon(modifier = Modifier.padding(innerPadding))
-//                }
-//            }
 
-
+            //BLOC PER FER SERVIR AMB EL LAZY COLUMN ADAPTIVE
             MyApp_Theme() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyLayout_Exemple4(modifier = Modifier.padding(innerPadding))
+                    NavigationWrapper_pokemon(modifier = Modifier.padding(innerPadding))
                 }
             }
+
+
+            //BLOC PER FER SERVIR AMB ELS EXEMPLES 1 a 4
+
+//            MyApp_Theme() {
+//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+//                    MyLayout_Exemple4(modifier = Modifier.padding(innerPadding))
+//                }
+//            }
         }
     }
 }

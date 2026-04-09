@@ -9,7 +9,4 @@ sealed class Route: NavKey {
 
     @Serializable
     data class PokemonDetailScreen(val id: String): Route()
-
-    @Serializable
-    data object Error: Route()
 }

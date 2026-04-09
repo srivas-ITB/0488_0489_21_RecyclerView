@@ -24,7 +24,6 @@ fun NavigationWrapper_pokemon(modifier: Modifier) {
                     backStack.removeLastOrNull()
                 }
             }
-            entry<Route.Error> { Text("Error") }
         }
 
     )
